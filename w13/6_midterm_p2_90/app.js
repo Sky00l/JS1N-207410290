@@ -1,5 +1,5 @@
 const btn = document.querySelector('.btn');
-const url = './api/people.json';
+const url = './api/dataset.json';
 
 btn.addEventListener('click', () => {
   fetchDataAsync(url);
