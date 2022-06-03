@@ -5,7 +5,7 @@ const presentDrinks = async (url) => {
   const data = await fetchDrinks(url);
   console.log('drinks data', data);
   const section = await displayDrinks(data);
-
+  
   // console.log('presentDrinks');
 }
 
