@@ -1,4 +1,4 @@
-const fetchRrinks = async (url) => {
+const fetchDrinks = async (url) => {
       try {
         const response = await fetch(url);
         const data = await response.json();
@@ -8,4 +8,4 @@ const fetchRrinks = async (url) => {
       }
     }
 
-      export default fetchRrinks;
+      export default fetchDrinks;
