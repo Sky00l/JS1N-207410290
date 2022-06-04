@@ -10,7 +10,7 @@ const displayDrinks = async ({drinks}) => {
     hideLoading();
     title.textContent = 'Sorry no drinks matched your search';
     section.innerHTML = null;
-    
+    return;
   }
   const newDrinks = drinks.map( (drink) => {
     const { idDrink:id, strDrink:name, strDrinkThumb:image, } = drink;
@@ -27,7 +27,7 @@ const displayDrinks = async ({drinks}) => {
   hideLoading();
   title.textContent = '';
   section.innerHTML = newDrinks;
-  
+  return section;
   };
   
   export default displayDrinks;
