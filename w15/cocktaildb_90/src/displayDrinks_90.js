@@ -4,8 +4,8 @@ const displayDrinks = async ({drinks}) => {
   console.log('drinks', drinks);
   const title = get('.title');
   const section = get('.section-center');
-  console.log('title', title);
-  console.log('section', section);
+  // console.log('title', title);
+  // console.log('section', section);
   if(!drinks) {
     hideLoading();
     title.textContent = 'Sorry no drinks matched your search';
